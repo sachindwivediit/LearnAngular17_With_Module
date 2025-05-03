@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'LearnAngular17_With_Module';
+  title = 'Sample Angular 17 App';
+  workingHours : number = 9;
+  IsActive :  boolean = true;
+  salary : number = 3000.59;
 }
