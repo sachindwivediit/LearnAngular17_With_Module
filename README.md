@@ -25,3 +25,28 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Step 1: Install Angular CLI
+
+If you haven't installed Angular CLI yet, run:
+
+npm install -g @angular/cli
+
+## Step 2: Create a New Angular Project
+
+ng new my-angular-app
+
+Angular 17 Tip
+Since Angular 17 supports standalone components, the ng new command now defaults to a module-free architecture. If you still want to use traditional modules, you can create the project with:
+
+ng new my-angular-app --no-standalone
+
+## Step 3: Navigate to Your Project Directory
+cd my-angular-app
+
+## Step 4: Run the Development Server
+Start the local server with:
+ng serve --open
+it will open default http://localhost:4200/ in your browser to see your Angular app running!
+
