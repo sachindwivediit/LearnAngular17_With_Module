@@ -10,4 +10,5 @@ export class AppComponent {
   workingHours : number = 9;
   IsActive :  boolean = true;
   salary : number = 3000.59;
+  imgUrl:string = "assets/logo.png";
 }
