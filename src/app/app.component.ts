@@ -11,4 +11,8 @@ export class AppComponent {
   IsActive :  boolean = true;
   salary : number = 3000.59;
   imgUrl:string = "assets/logo.png";
+
+  btnClick() : void{
+    this.salary = 10000.40;
+  }
 }
