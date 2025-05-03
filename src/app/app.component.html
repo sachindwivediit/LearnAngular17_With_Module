@@ -9,5 +9,11 @@
 <!--Property Binding (Binding values to HTML attributes)-->
 <img [src]="imgUrl" alt="MyLogo" height="200" width="200">
 
+<hr>
 <!--Event Binding(Handling User Actions)-->
 <button class="btn" (click)="btnClick()">Click Here</button>
+
+<br><hr>
+<!--Two-Way Data Binding (Using ngModel for dynamic updates)-->
+<input type="text" [(ngModel)]="name" placeholder="Enter your name">
+<p>Your name : {{name}}</p>
