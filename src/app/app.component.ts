@@ -39,5 +39,11 @@ export class AppComponent {
       subcode: 105,
       name: "Angular 17"
     },
-  ]
+  ];
+
+  isShowButton : boolean = false;
+
+  onShowButton() : void{
+    this.isShowButton = !this.isShowButton;
+  }
 }

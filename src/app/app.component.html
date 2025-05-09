@@ -27,5 +27,10 @@
 <h1>Subjects Provided By </h1>
 <li *ngFor="let sub of subject;index as i ">{{i}} || {{sub.subcode}} || {{sub.name}}</li>
 
-
+<h1>Understand *ngIf Directives</h1><hr>
+<button (click)="onShowButton()">Show/HideButton</button>
+<hr>
+<div *ngIf="isShowButton">
+  <p>Display Message</p>
+</div>
 <app-login></app-login>
