@@ -25,4 +25,4 @@
 </ul>
 
 <h1>Subjects Provided By </h1>
-<li *ngFor="let sub of subject">{{sub.subcode}} || {{sub.name}}</li>
+<li *ngFor="let sub of subject;index as i ">{{i}} || {{sub.subcode}} || {{sub.name}}</li>
