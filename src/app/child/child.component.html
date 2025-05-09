@@ -1,0 +1,36 @@
+<h1>Interpolated with string type : {{title}}</h1>
+<hr>
+<h1>Interpolated with number type : {{workingHours}}</h1>
+<hr>
+<h1>Interpolated with boolean type : {{IsActive}}</h1>
+<hr>
+<h1>Interpolated with decimal type : {{salary}}</h1>
+
+<!--Property Binding (Binding values to HTML attributes)-->
+<img [src]="imgUrl" alt="MyLogo" height="200" width="200">
+
+<hr>
+<!--Event Binding(Handling User Actions)-->
+<button class="btn" (click)="btnClick()">Click Here</button>
+
+<br><hr>
+<!--Two-Way Data Binding (Using ngModel for dynamic updates)-->
+<input type="text" [(ngModel)]="name" placeholder="Enter your name">
+<p>Your name : {{name}}</p>
+
+<h1>Courses Provided By </h1>
+<p>{{course}}</p>
+<ul *ngFor="let course of course">
+  <li>{{course}}</li>
+</ul>
+
+<h1>Subjects Provided By </h1>
+<li *ngFor="let sub of subject;index as i ">{{i}} || {{sub.subcode}} || {{sub.name}}</li>
+
+<h1>Understand *ngIf Directives</h1><hr>
+<button (click)="onShowButton()">Show/HideButton</button>
+<hr>
+<div *ngIf="isShowButton">
+  <p>Display Message</p>
+</div>
+<app-login></app-login>
